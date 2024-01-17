@@ -1,0 +1,6 @@
+step_01_errorless_measurement/*.jpg
+step_02_errorless_reconstruction/*.jpg
+step_03_uncertain_measurement/*.jpg
+step_04_naive_uncertain_reconstruction/*.jpg
+step_05_proper_uncertain_reconstruction/*.jpg
+step_06_uncertain_reconstruction_wrong_model/*.jpg
