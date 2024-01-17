@@ -19,12 +19,13 @@ This figure sets up the problem, with the underlying distribution now shown via 
 
 ![step_02_errorless_reconstruction_setup](https://github.com/gw-gallery/hierarchical-inference-demo/assets/11800515/b2fb4fd1-9553-4672-be6b-9f0ce7576222)
 
+Now perform the reconstruction.
+Specifically, in the case of perfect measurements, as shown here, we can literally just histogram our data to asymptotically reconstruct the underlying distribution.
+Problem solved!
+
 https://github.com/gw-gallery/hierarchical-inference-demo/assets/11800515/de35c20a-3975-462c-9f09-ce88c3543620
 
 ## Step 3. Uncertain measurements
-
-In the case of perfect measurements, as shown here, we can literally just histogram our data to asymptotically reconstruct the underlying distribution.
-Problem solved!
 
 https://github.com/gw-gallery/hierarchical-inference-demo/assets/11800515/35470706-2e44-4916-84f1-0e56a5e1f6ca
 
