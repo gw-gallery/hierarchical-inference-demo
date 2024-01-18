@@ -56,5 +56,24 @@ We see that this approach *does* converge to the right answer.
 
 https://github.com/gw-gallery/hierarchical-inference-demo/assets/11800515/46b91ca6-8a72-47f7-bb56-1a59b94379e6
 
+## Step 6. Proper hierarchical inference, but with an incorrect model
+
+Hierarchical inference with a parametric model brings its own danger though: model mismatch.
+In general, we do not know a priori the right model to choose.
+In the example above, the underlying distribution *was* a mixture of two Gaussians, and so our fit converged to truth.
+But if we had chosen some other distribution to fit, not only would we have gotten the wrong answer, we would (unknowingly) become increasingly confident in this wrong answer with more data.
+
+As a demonstration, repeat the hierarchical inference above but now using an incorrect model, a truncated broken power law:
+
+$$
+p(x) \propto
+  \begin{cases}
+  \left(\frac{x+6}{x_0 + 6}\right)^{\kappa_1} \tau(x,x_\mathrm{min},x_\mathrm{max})  & (x>x_0) \\
+  \left(\frac{x+6}{x_0+6}\right)^{\kappa_2} \tau(x,x_\mathrm{min},x_\mathrm{max}) & (x\leq x_0)
+  \end{cases}
+$$
+
+
+
 
 
