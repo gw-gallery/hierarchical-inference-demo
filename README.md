@@ -73,6 +73,21 @@ p(x) \propto
   \end{cases}
 $$
 
+where the truncation $\tau(x,x_\mathrm{min},x_\mathrm{max})$ has the form
+
+$$
+\tau(x,x_\mathrm{min},x_\mathrm{max})
+  \begin{cases}
+  e^{-(x-x_\mathrm{min})^2/(0.1^2)} & (x\lt x_\mathrm{min}) \\
+  1 & (x_\mathrm{min}\lt x \lt x_\mathrm{max}) \\
+  e^{-(x-x_\mathrm{max})^2/(0.1^2)} & (x \gt x_\mathrm{max})
+  \end{cases}
+$$
+
+Reanalyzing the same data with this new (incorrect model) yields results that grow increasingly precise with more data, but which converge to the wrong answer:
+
+https://github.com/gw-gallery/hierarchical-inference-demo/assets/11800515/b8d0b336-6ca5-44ca-9867-6caa0467930d
+
 
 
 
